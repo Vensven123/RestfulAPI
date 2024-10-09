@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\BWSSB\Venkat\Publishfromvs\RestfulAPI</_PublishTargetUrl>
+    <History>True|2024-10-08T09:48:59.0857911Z||;True|2024-10-08T15:12:57.0578645+05:30||;True|2024-10-08T15:06:36.3786663+05:30||;True|2024-10-07T15:16:54.4272222+05:30||;True|2024-10-05T15:17:44.9186002+05:30||;True|2024-10-05T14:27:55.8006769+05:30||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

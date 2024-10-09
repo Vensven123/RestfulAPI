@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "BwssbRestfulAPI.Controllers.AxisKioskController",
+    "Method": "GetChallanDetails",
+    "RelativePath": "api/AxisKiosk/GetChallanDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ChallanNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BWSSBKey",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BwssbRestfulAPI.Controllers.AxisKioskController",
+    "Method": "GetReceiptDetails",
+    "RelativePath": "api/AxisKiosk/GetReceiptDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RrNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BWSSBKey",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BwssbRestfulAPI.Controllers.AxisKioskController",
+    "Method": "Insert_ChallanTransactions",
+    "RelativePath": "api/AxisKiosk/Insert_Challan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "challanModel",
+        "Type": "BwssbRestfulAPI.Models.AxisKiosk.ChallanModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BwssbRestfulAPI.Controllers.AxisKioskController",
+    "Method": "Insert_ReceiptTransactions",
+    "RelativePath": "api/AxisKiosk/Insert_Receipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "receiptModel",
+        "Type": "BwssbRestfulAPI.Models.AxisKiosk.ReceiptModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BwssbRestfulAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BwssbRestfulAPI.WeatherForecast, BwssbRestfulAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
