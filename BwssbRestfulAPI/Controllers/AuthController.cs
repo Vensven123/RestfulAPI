@@ -10,10 +10,12 @@ using System.Text;
 
 namespace BwssbRestfulAPI.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
+
         private readonly IConfiguration _configuration;
         private readonly ICommonRepository _commonRepository;
 
@@ -68,7 +70,7 @@ namespace BwssbRestfulAPI.Controllers
         // Generate JWT Token
         private string GenerateJwtToken(string CCID)
         {
-
+            var Expire = _configuration["JWT:Expire"];
             var jwtSecretKey = _configuration["JWT:SecretKey"];
             var issuer = _configuration["JWT:Issuer"];
             var audience = _configuration["JWT:Audience"];
@@ -77,7 +79,7 @@ namespace BwssbRestfulAPI.Controllers
             {
                 new Claim("CCID", CCID),                
                 new Claim(JwtRegisteredClaimNames.Sub, "BWSSB"),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                //new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecretKey));
@@ -87,7 +89,7 @@ namespace BwssbRestfulAPI.Controllers
                 issuer: issuer,
                 audience: audience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(30),
+                expires: DateTime.Now.AddMinutes(int.Parse(Expire)),
                 signingCredentials: creds
             );
 

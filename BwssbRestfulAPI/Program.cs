@@ -44,8 +44,6 @@ builder.Services.AddScoped<ICommonRepository, CommonRepository>();
 builder.Services.AddScoped<ChallanRepository>();
 builder.Services.AddScoped<ReceiptRepository>();
 
-
-
 //--- DBServices
 builder.Services.AddScoped<IDBServices, DBServiceClass>();
 
@@ -62,7 +60,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Description = "Bearer "
+        Description = "Bearer"
     });
 
     options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
@@ -86,12 +84,6 @@ var app = builder.Build();
 
 // Add the custom error handling middleware
 app.UseErrorHandlingMiddleware();
-
-
-
-
-
-
 
 
 //Configure the HTTP request pipeline.
