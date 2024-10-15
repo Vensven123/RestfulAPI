@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "BwssbRestfulAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginModel",
+        "Type": "BwssbRestfulAPI.Models.JWToken.RequestToken",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BwssbRestfulAPI.Controllers.AxisKioskController",
     "Method": "GetChallanDetails",
     "RelativePath": "api/AxisKiosk/GetChallanDetails",

@@ -15,6 +15,7 @@ namespace BwssbRestfulAPI.Repository.AxisKioskRepository
             _dBServices = dbService;
         }
 
+
         //public async Task<DataTable> GetReceiptDetails(string RRNumber)
         //{
         //    string message = string.Empty;
@@ -122,8 +123,6 @@ namespace BwssbRestfulAPI.Repository.AxisKioskRepository
 
                                     message = "Successfully Reterived";
                                 }
-
-
 
                             }
                             else

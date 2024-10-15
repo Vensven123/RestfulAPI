@@ -6,11 +6,15 @@ using System.Data.SqlClient;
 using System.Data;
 using Microsoft.Extensions.Configuration;
 using BwssbRestfulAPI.Repository.AxisKioskRepository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BwssbRestfulAPI.Controllers
 {
+
+     
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AxisKioskController : ControllerBase
     {
         private readonly IDBServices _DBService;
@@ -18,12 +22,14 @@ namespace BwssbRestfulAPI.Controllers
         private readonly ChallanRepository _challanRepository;
         private readonly ReceiptRepository _receiptRepository;
 
-        public AxisKioskController(IDBServices dbService,IConfiguration configuration,ChallanRepository challanRepository,ReceiptRepository receiptRepository) {
+        public AxisKioskController(IDBServices dbService,IConfiguration configuration,ChallanRepository challanRepository,ReceiptRepository receiptRepository) 
+        {
 
             _DBService = dbService;
             _configuration = configuration;
             _challanRepository = challanRepository;
             _receiptRepository = receiptRepository;
+
         }
 
 
@@ -55,10 +61,8 @@ namespace BwssbRestfulAPI.Controllers
 
             return Ok(data);
 
+
         }
-
-
-
 
         [HttpPost("Insert_Challan")]
         public IActionResult Insert_ChallanTransactions([FromBody] ChallanModel challanModel)
@@ -91,7 +95,7 @@ namespace BwssbRestfulAPI.Controllers
 
             if (request == null || string.IsNullOrEmpty(request.RrNumber) || string.IsNullOrEmpty(request.BWSSBKey))
             {
-                return BadRequest("Invalid request.");
+                return BadRequest("Invalid request.Please check the request parameters");
             }
 
             if (request.BWSSBKey != BwsspKey)

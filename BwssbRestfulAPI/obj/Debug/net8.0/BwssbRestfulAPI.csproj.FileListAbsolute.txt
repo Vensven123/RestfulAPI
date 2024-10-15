@@ -74,3 +74,12 @@ D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\obj\Debug\net8.0\re
 D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\obj\Debug\net8.0\BwssbRestfulAPI.pdb
 D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\obj\Debug\net8.0\BwssbRestfulAPI.genruntimeconfig.cache
 D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\obj\Debug\net8.0\ref\BwssbRestfulAPI.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\obj\Debug\net8.0\BwssbRestfulAPI.sourcelink.json
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\WorkFolder\Venkat\PROJECT\BwssbRestfulAPI\BwssbRestfulAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

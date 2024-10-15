@@ -59,8 +59,6 @@ namespace BwssbRestfulAPI.Models.AxisKiosk
         public string ModeC { get; set; }
 
         public int? CnumberC { get; set; }
-
-      
         public byte BankIdC { get; set; }
 
         [StringLength(50, ErrorMessage = "Bank Branch cannot exceed 50 characters")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BwssbRestfulAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+421d938d472bf27dcace1f71ff53263b990b0e80")]
 [assembly: System.Reflection.AssemblyProductAttribute("BwssbRestfulAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BwssbRestfulAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

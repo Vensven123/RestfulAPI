@@ -37,10 +37,10 @@ namespace BwssbRestfulAPI.Models.AxisKiosk
         public int AmountCollected { get; set; }
 
         [Required(ErrorMessage = "SDID is required")]
-        [StringLength(10, ErrorMessage = "SDID cannot exceed 10 characters")]
+        [StringLength(3, ErrorMessage = "SDID cannot exceed 3 characters")]
         public string Sdid { get; set; }
 
-        [StringLength(3, ErrorMessage = "Org SDID cannot exceed 3 characters")]
+        [StringLength(10, ErrorMessage = "Org SDID cannot exceed 10 characters")]
         public string OrgSdid { get; set; }
 
         [Required(ErrorMessage = "Realised status is required")]
@@ -66,7 +66,6 @@ namespace BwssbRestfulAPI.Models.AxisKiosk
 
         public int? CNumber { get; set; }
 
-        
         public byte BankId { get; set; }
 
         [StringLength(50, ErrorMessage = "Bank Branch cannot exceed 50 characters")]

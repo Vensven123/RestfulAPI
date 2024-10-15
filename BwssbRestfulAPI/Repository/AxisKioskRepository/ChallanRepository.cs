@@ -9,10 +9,11 @@ namespace BwssbRestfulAPI.Repository.AxisKioskRepository
     {
        
         private readonly IDBServices _dBServices;
-
+       
         public ChallanRepository(IDBServices dbService)
         {
             _dBServices = dbService;
+            
         }
 
         //public async Task<DataTable> GetChallanDetailsAsync(string challanNumber)
